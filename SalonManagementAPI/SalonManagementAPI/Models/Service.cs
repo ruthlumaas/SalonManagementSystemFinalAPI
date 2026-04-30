@@ -4,11 +4,10 @@ namespace SalonManagementAPI.Models
 {
     public class Service
     {
-        [Key]
         public int Id { get; set; }
-
-        public string ServiceName { get; set; }
-
+        public string Name { get; set; }
         public decimal Price { get; set; }
+        public int Duration { get; set; }
+        public bool IsActive { get; set; }
     }
 }
